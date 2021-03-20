@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace InventoryService.Models
+namespace ToDoList.Models
 {
     public partial class Users
     {

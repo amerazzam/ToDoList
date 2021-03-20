@@ -1,4 +1,4 @@
-﻿using InventoryService.Models;
+﻿using ToDoList.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InventoryService.Controllers
+namespace ToDoList.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

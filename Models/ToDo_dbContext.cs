@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace InventoryService.Models
+namespace ToDoList.Models
 {
     public partial class ToDo_dbContext : DbContext
     {

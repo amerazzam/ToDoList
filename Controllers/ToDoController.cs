@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using InventoryService.Models;
+using ToDoList.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace InventoryService.Controllers
+namespace ToDoList.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]
@@ -55,7 +55,7 @@ namespace InventoryService.Controllers
 
         // PUT: api/ToDo/1
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutActions(int id, ToDo actions)
+        public async Task<IActionResult> PutActions(int id,ToDo actions)
         {
             if (id != actions.Id)
             {
