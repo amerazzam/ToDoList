@@ -35,7 +35,7 @@ namespace InventoryService.Controllers
             return await actions.ToListAsync();
         }
 
-        // GET: api/Products/5
+        // GET: api/ToDo/1
         [HttpGet("{id}")]
         public async Task<userAction> GetActions (int id)
         {
@@ -53,8 +53,7 @@ namespace InventoryService.Controllers
             return u;
         }
 
-        // PUT: api/Products/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to
+        // PUT: api/ToDo/1
         [HttpPut("{id}")]
         public async Task<IActionResult> PutActions(int id, ToDo actions)
         {
@@ -84,8 +83,7 @@ namespace InventoryService.Controllers
             return CreatedAtAction("GetActions", id, actions);
         }
 
-        // POST: api/Products
-        // To protect from overposting attacks, please enable the specific properties you want to bind to
+        // POST: api/ToDo
         [HttpPost]
         public async Task<ActionResult<ToDo>> PostActions(ToDo actions)
         {
@@ -95,7 +93,7 @@ namespace InventoryService.Controllers
             return CreatedAtAction("GetActions", new { id = actions.Id }, actions);
         }
 
-        // DELETE: api/Products/5
+        // DELETE: api/ToDo/1
         [HttpDelete("{id}")]
         public async Task<string> DeleteActions(int id)
         {
