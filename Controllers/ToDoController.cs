@@ -32,22 +32,6 @@ namespace InventoryService.Controllers
         public async Task<ActionResult<IEnumerable<ToDo>>> GetActions()
         {
             var actions = _context.ToDo.AsQueryable();
-
-            //if (inStock != null) // Adds the condition to check availability 
-            //{
-            //    products = _context.ToDo.Where(i => i.AvailableQuantity > 0);
-            //}
-
-            //if (skip != null)
-            //{
-            //    products = products.Skip((int)skip);
-            //}
-
-            //if (take != null)
-            //{
-            //    products = products.Take((int)take);
-            //}
-
             return await actions.ToListAsync();
         }
 
@@ -70,8 +54,7 @@ namespace InventoryService.Controllers
         }
 
         // PUT: api/Products/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        // To protect from overposting attacks, please enable the specific properties you want to bind to
         [HttpPut("{id}")]
         public async Task<IActionResult> PutActions(int id, ToDo actions)
         {
@@ -102,8 +85,7 @@ namespace InventoryService.Controllers
         }
 
         // POST: api/Products
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        // To protect from overposting attacks, please enable the specific properties you want to bind to
         [HttpPost]
         public async Task<ActionResult<ToDo>> PostActions(ToDo actions)
         {
